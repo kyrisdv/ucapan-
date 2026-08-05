@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For You, Kimmy 🌷</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating decorations -->
+  <div class="petals" id="petals"></div>
+
+  <!-- 1. SECRET CODE -->
+  <section class="screen active" id="lockScreen">
+    <div class="lock-card">
+      <div class="flower">🌷</div>
+      <h1>For You, Kimmy</h1>
+      <p>enter the secret code</p>
+
+      <div class="dots" id="dots">
+        <i></i><i></i><i></i><i></i><i></i><i></i>
+      </div>
+
+      <div class="keypad">
+        <button data-key="1">1</button><button data-key="2">2</button><button data-key="3">3</button>
+        <button data-key="4">4</button><button data-key="5">5</button><button data-key="6">6</button>
+        <button data-key="7">7</button><button data-key="8">8</button><button data-key="9">9</button>
+        <button data-key="clear">⌫</button><button data-key="0">0</button><button data-key="go">↪</button>
+      </div>
+
+      <small>hint: tanggal spesial 💗</small>
+      <p class="error" id="error"></p>
+    </div>
+  </section>
+
+  <!-- 2. LOADING -->
+  <section class="screen" id="loadingScreen">
+    <div class="loading-box">
+      <div class="flower big">🌸</div>
+      <p>Loading your surprise...</p>
+      <div class="loader"><span></span></div>
+    </div>
+  </section>
+
+  <!-- 3. MAIN BIRTHDAY -->
+  <section class="screen" id="mainScreen">
+    <div class="main-card">
+      <div class="tiny">a little surprise for you</div>
+      <h2>Happy Birthday</h2>
+      <h1>Kimmy <span>♡</span></h1>
+      <p class="subtitle">semoga hari ini jadi salah satu hari<br>yang paling kamu ingat dengan senyum.</p>
+
+      <div class="cake">🎂</div>
+
+      <button class="primary" id="openGift">open your gift</button>
+      <button class="ghost" id="openLetter">💌 ada sesuatu buat kamu</button>
+    </div>
+  </section>
+
+  <!-- 4. GIFT -->
+  <div class="modal" id="giftModal">
+    <div class="modal-card">
+      <button class="close" data-close="giftModal">×</button>
+      <div class="gift-icon">🎁</div>
+      <h2>For You</h2>
+      <p>hadiahnya sederhana, tapi doanya nggak sederhana.</p>
+      <div class="wish">
+        <strong>semoga...</strong>
+        <p>semua yang kamu semogakan pelan-pelan menemukan jalannya.</p>
+        <p>semoga sehat, bahagia, dikelilingi orang baik, dan selalu punya alasan untuk tersenyum.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. LETTER -->
+  <div class="modal" id="letterModal">
+    <div class="modal-card letter">
+      <button class="close" data-close="letterModal">×</button>
+      <div class="flower">🌷</div>
+      <h2>Untuk Kimmy,</h2>
+      <p>
+        selamat ulang tahun yaa. mungkin aku nggak selalu bisa
+        ada di setiap cerita kamu, tapi aku tetap berharap cerita
+        kamu selalu berakhir dengan hal-hal yang baik.
+      </p>
+      <p>
+        semoga umur yang baru membawa banyak kesempatan,
+        banyak kebahagiaan, dan banyak hal yang selama ini kamu
+        tunggu-tunggu.
+      </p>
+      <p>
+        jangan lupa istirahat, jangan terlalu keras sama diri sendiri,
+        dan tetap jadi kamu yang aku kenal.
+      </p>
+      <p class="signature">— seseorang yang mendoakanmu 🌷</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
